@@ -1,13 +1,13 @@
-function sum () {
-    if (arguments.length <= 0) return
-    let i = 0
-    for (const value of Object.values(arguments)) {
-        i = i + value
+function caculator (n) {
+    if(n < 0) return
+
+    let result = 0
+
+    for(let i = 0; i <= n; i++){
+        result = result + i;
     }
 
-    return i
+    return result
 }
 
-console.log(sum(3,5,7))
-console.log(sum(10,-6,3))
-console.log(sum())
+console.log(caculator(4));
