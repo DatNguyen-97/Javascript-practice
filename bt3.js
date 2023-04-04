@@ -19,3 +19,17 @@ function caculator2 () {
 
 console.log(caculator(3,5,7))
 console.log(caculator2(4,6,8))
+
+function caculator3 (n) {
+    if (n <= 0) return
+
+    let result = 0
+
+    for(let i = 2; i <= n; i++) {
+        result = result + 1/i 
+    }
+
+    return result + 1
+}
+
+console.log(caculator3(5))
