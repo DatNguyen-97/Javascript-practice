@@ -3,7 +3,7 @@ function caculator (n) {
 
     let result = 0
 
-    for(let i = 1; i <= n; i++) {
+    for(let i = 0; i <= n; i++) {
         result = result + i/(i + 1)
     }
 
